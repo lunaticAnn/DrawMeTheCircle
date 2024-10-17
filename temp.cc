@@ -54,7 +54,7 @@ int main() {
     Canvas canvas(dimension);
     for (int x = 0; x < dimension ; ++x)
         for (int y = 0; y < dimension ; ++y)
-            canvas.draw(x, y, static_cast<unsigned char>(x * 8));
+            canvas.setPixel(x, y, static_cast<unsigned char>(x * 8));
     canvas.dumpToHexString();
     return 0;
 }
